@@ -5,8 +5,9 @@ export default function NavBar() {
     return (
         <nav>
             <h1>NAVBAR</h1>
-            <Link to='/'>HOME</Link>
-            <Link to='/contact'>CONTACT</Link>
+            <Link to='/'>About</Link>
+            <Link to='/portfolio'>Portfolio</Link>
+            <Link to='/contact'>Contact</Link>
         </nav>
     )
 }
