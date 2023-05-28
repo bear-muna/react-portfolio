@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 
-export default function Form() {
+export default function Form(props) {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -40,8 +40,20 @@ export default function Form() {
         setMessage('');
     }
     
+    const testArr = [
+        {
+            name: 'TEST 1'
+        },
+        {
+            name: 'TEST 2'
+        },
+        {
+            name: 'TEST from index'
+        }
+    ]
+
     return (
-        <form onSubmit={handleSubmit} contacts={contactInfo}>
+        <form onSubmit={handleSubmit} contacts={testArr}>
             <h2>Input contact information!</h2>
             <hr/>
             <label for='name'>Name:</label>
