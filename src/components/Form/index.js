@@ -41,7 +41,7 @@ export default function Form() {
     }
     
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} contacts={contactInfo}>
             <h2>Input contact information!</h2>
             <hr/>
             <label for='name'>Name:</label>
