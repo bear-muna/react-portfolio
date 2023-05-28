@@ -11,6 +11,7 @@ export default function Form() {
             <input name='email' type='text' placeholder='email input'/>
             <label for='description'>Description:</label>
             <input name='description' type='text' placeholder='description input'/>
+            <button type='submit'>Submit</button>
         </form>
     )
 }
