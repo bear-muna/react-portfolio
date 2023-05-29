@@ -41,6 +41,10 @@ export default function Form(props) {
         setMessage('');
     }
 
+
+    // TODO: Need to have name verification
+    // TODO: Need to have email verification
+
     return (
         <>
             <form onSubmit={handleSubmit} >
