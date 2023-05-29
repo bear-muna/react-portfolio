@@ -6,8 +6,8 @@ export default function ContactCard(props) {
     }
 
     return (
-        <>
+        <ul>
             {props.testArr ? renderCards() : null}
-        </>
+        </ul>
     )
 }

@@ -5,6 +5,12 @@ import { useState } from 'react';
 
 export default function Contact() {
     // TODO: Need to render objects
+    const [passArr, setPassArr] = useState([]);
+    function callBack(x) {
+        if (x) {
+            return x.map( y => <p>{y.name}</p>)
+        }
+    }
 
 
     const test = [
@@ -22,10 +28,7 @@ export default function Contact() {
     return (
         <main>
             <h1>Contact page</h1>
-            <Form />
-            <ul>
-            <ContactCard testArr={test} />
-            </ul>
+            <Form contacts={callBack}/>
         </main>
     )
 }

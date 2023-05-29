@@ -48,12 +48,13 @@ export default function Form(props) {
             name: 'TEST 2'
         },
         {
-            name: 'TEST from index'
+            name: 'TEST from form component'
         }
     ]
 
     return (
-        <form onSubmit={handleSubmit} contacts={testArr}>
+        <form onSubmit={handleSubmit} >
+            {props.contacts(testArr)}
             <h2>Input contact information!</h2>
             <hr/>
             <label for='name'>Name:</label>
