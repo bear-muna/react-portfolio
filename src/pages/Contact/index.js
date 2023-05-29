@@ -1,11 +1,8 @@
 import React from 'react';
 import Form from '../../components/Form';
-import ContactCard from '../../components/ContactCard';
-import { useState } from 'react';
 
 export default function Contact() {
     // TODO: Need to render objects
-    const [passArr, setPassArr] = useState([]);
     function callBack(x) {
         if (x) {
             return x.map( y => <p>{y.name}</p>)

@@ -1,4 +1,5 @@
 import React from 'react';
+import ContactCard from '../ContactCard'
 import { useState } from 'react';
 
 export default function Form(props) {
@@ -39,31 +40,21 @@ export default function Form(props) {
         setEmail('');
         setMessage('');
     }
-    
-    const testArr = [
-        {
-            name: 'TEST 1'
-        },
-        {
-            name: 'TEST 2'
-        },
-        {
-            name: 'TEST from form component'
-        }
-    ]
 
     return (
-        <form onSubmit={handleSubmit} >
-            {props.contacts(testArr)}
-            <h2>Input contact information!</h2>
-            <hr/>
-            <label for='name'>Name:</label>
-            <input name='name' type='text' placeholder='name input' onChange={handleChange} value={name}/>
-            <label for='email'>Email:</label>
-            <input name='email' type='text' placeholder='email input' onChange={handleChange} value={email}/>
-            <label for='message'>Message:</label>
-            <input name='message' type='text' placeholder='description input' onChange={handleChange} value={message}/>
-            <button type='submit'>Submit</button>
-        </form>
+        <>
+            <form onSubmit={handleSubmit} >
+                <h2>Input contact information!</h2>
+                <hr/>
+                <label for='name'>Name:</label>
+                <input name='name' type='text' placeholder='name input' onChange={handleChange} value={name}/>
+                <label for='email'>Email:</label>
+                <input name='email' type='text' placeholder='email input' onChange={handleChange} value={email}/>
+                <label for='message'>Message:</label>
+                <input name='message' type='text' placeholder='description input' onChange={handleChange} value={message}/>
+                <button type='submit'>Submit</button>
+            </form>
+            <ContactCard testArr={contactInfo} />
+        </>
     )
 }
