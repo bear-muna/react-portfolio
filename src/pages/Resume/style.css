@@ -1,0 +1,35 @@
+:root {
+    --border: 1px solid black;
+    --background: rgb(157, 157, 218);
+    --secondary-back: rgb(201, 197, 209);
+    --main-back: rgb(231, 231, 221);
+    --dark-back: rgb(81, 81, 114);
+    --contrast: rgb(158, 136, 12);
+}
+
+.resume-sec {
+    background: var(--main-back);
+}
+
+.front-end-title,
+.back-end-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--dark-back);
+}
+
+.skills {
+    color: var(--background);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.res-tag {
+    text-decoration: none;
+    color: var(--background);   
+}
+
+.res-tag:hover {
+    font-weight: bold;
+    color: var(--dark-back);
+}

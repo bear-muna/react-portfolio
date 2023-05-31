@@ -1,15 +1,31 @@
 import React from 'react';
+import './style.css';
 
 export default function Resume() {
-    const skills = ['HTML', 'CSS', 'JavaScript', 'node.js', 'express.js', 'mySQL', 'sequelize', 'mongoDB', 'mongoose', 'React']
+    const frontEndSkills = ['HTML', 'CSS', 'JavaScript', 'React']
+    const backEndSkills = ['node.js', 'express.js', 'mySQL', 'sequelize', 'mongoDB', 'mongoose'];
     
     return (
-        <main>
-            <h1>Resume Page</h1>
-            <h2>Proficiencies</h2>
-            <ul>
-                {skills.map( (x,i) => <li key={i}>{x}</li>)}
-            </ul>
-        </main>
+        <div className='container-fluid p-3 resume-sec'>
+            <div className='row'>
+                <div className='col-lg-5 col-12'>
+                    <div className='front-end-title'>Front-end Skills</div>
+                    {frontEndSkills.map(
+                        (x, i) =>
+                        <div className='skills' key={i}>{x}</div>
+                    )}
+                </div>
+                <div className='col-lg-5 col-12'>
+                    <div className='back-end-title'>Back-end Skills</div>
+                    {backEndSkills.map(
+                        (x, i) =>
+                        <div className='skills' key={i}>{x}</div>
+                    )}
+                </div>
+                <div className='col-12'>
+                        <a className='res-tag' href='https://placekitten.com/200/300' target='_blank' rel="noreferrer" >Resume ... Coming soon!</a>
+                </div>   
+            </div>
+        </div>
     )
 }
