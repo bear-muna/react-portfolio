@@ -1,0 +1,16 @@
+:root {
+    --border: 1px solid black;
+    --background: rgb(157, 157, 218);
+    --secondary-back: rgb(201, 197, 209);
+    --main-back: rgb(231, 231, 221);
+    --dark-back: rgb(81, 81, 114);
+    --contrast: rgb(158, 136, 12);
+}
+
+.contact-page {
+    background: var(--main-back);
+}
+
+.contact-page h1 {
+    color: var(--dark-back)
+}
