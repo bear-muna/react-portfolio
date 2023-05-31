@@ -3,11 +3,11 @@ import './style.css';
 
 export default function PortfolioCard(props) {
     return (
-        <a href={props.link} target='blank'>
-            <section>
+        <div className='px-2 card-link'>
+            <a href={props.link} target='blank'>
                 <h3>{props.name}</h3>
                 <p>{props.stack}</p>
-            </section>
-        </a>
+            </a>    
+        </div>
     )
 }
