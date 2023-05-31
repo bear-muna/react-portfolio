@@ -1,0 +1,40 @@
+:root {
+    --border: 1px solid black;
+    --background: rgb(157, 157, 218);
+    --secondary-back: rgb(201, 197, 209);
+    --main-back: rgb(231, 231, 221);
+    --dark-back: rgb(81, 81, 114);
+    --contrast: rgb(158, 136, 12);
+}
+
+.about-sec {
+    background: var(--main-back);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1%;
+}
+
+.about-sec h1 {
+    font-size: 44px;
+    color: var(--dark-back);
+    padding: 2%;
+}
+
+.about-sec hr {
+    color: var(--dark-back);
+    border-width: 2px;
+    border-color: var(--dark-back);
+}
+
+.about-sec img {
+    height: 200px;
+    width: 300px;
+    object-fit: contain;
+}
+
+.about-sec p {
+    padding: 2%;
+}
+
