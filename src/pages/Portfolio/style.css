@@ -1,0 +1,68 @@
+:root {
+    --border: 1px solid black;
+    --background: rgb(157, 157, 218);
+    --secondary-back: rgb(201, 197, 209);
+    --main-back: rgb(231, 231, 221);
+    --dark-back: rgb(81, 81, 114);
+    --contrast: rgb(158, 136, 12);
+}
+
+.portfolio-container {
+    background: var(--main-back);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.portfolio-container h1 {
+    font-size: 44px;
+    font-weight: bold;
+    color: var(--dark-back);
+}
+
+.portfolio-container .proj {
+    border: 3px solid var(--dark-back);
+    border-radius: 10px;
+    opacity: 0.75;
+    height: 15em;
+}
+
+.portfolio-container .proj:hover {
+    opacity: 1.0 !important;    
+}
+
+#proj-1 {
+    background: url(../../assets/bite-buddies.PNG);
+    background-position: center;
+    background-size: contain;
+}
+
+#proj-2 {
+    background: url(../../assets/enter-the-temple.PNG);
+    background-position: center;
+    background-size: contain;
+}
+
+#proj-3 {
+    background: url(../../assets/tech-blog.PNG);
+    background-position: center;
+    background-size: contain;
+}
+
+#proj-4 {
+    background: url(../../assets/bio-quiz.PNG);
+    background-position: center;
+    background-size: contain;
+}
+
+#proj-5 {
+    background: url(../../assets/weather-app.PNG);
+    background-position: center;
+    background-size: contain;
+}
+
+#proj-6 {
+    background: url(../../assets/social-network-api.PNG);
+    background-position: center;
+    background-size: contain;
+}
