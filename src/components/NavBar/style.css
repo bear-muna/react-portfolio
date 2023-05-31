@@ -8,18 +8,36 @@
 }
 
 .nav-bar {
-    background: var(--background)
+    background: var(--dark-back);
+    height: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .nav-bar h1 {
-    color: salmon;
+    background: var(--main-back);
+    color: var(--background);
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
 }
 
 .nav-bar .nav-link {
     text-decoration: none;
-    color: blue;
+    color: var(--background);
+    font-size: 2em;
 }
 
 .nav-bar .nav-link:hover {
-    color: red;
+    color: var(--main-back);
 }
+
