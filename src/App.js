@@ -6,13 +6,14 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import React from 'react';
+import './utils/style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <Router>
       <NavBar />
-      <hr />
+      <div className='hero'></div>
       <Routes>
         <Route path='/' element={ <About/> } />
         <Route path='/portfolio' element={ <Portfolio/> } />

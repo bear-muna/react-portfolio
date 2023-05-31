@@ -34,35 +34,35 @@
 #proj-1 {
     background: url(../../assets/bite-buddies.PNG);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
 
 #proj-2 {
     background: url(../../assets/enter-the-temple.PNG);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
 
 #proj-3 {
     background: url(../../assets/tech-blog.PNG);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
 
 #proj-4 {
     background: url(../../assets/bio-quiz.PNG);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
 
 #proj-5 {
     background: url(../../assets/weather-app.PNG);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
 
 #proj-6 {
     background: url(../../assets/social-network-api.PNG);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
