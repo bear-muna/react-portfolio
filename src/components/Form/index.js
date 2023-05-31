@@ -51,7 +51,7 @@ export default function Form() {
 
     return (
         <div className='row d-flex'>
-            <div className='form-sec col-4'>
+            <div className='form-sec col-4 mx-2'>
                 <form className='form-submit' onSubmit={handleSubmit} >
                     <hr/>
                     <div className='col-12 py-2 my-2'>
@@ -64,10 +64,10 @@ export default function Form() {
                     </div>
                     <div className='col-12 py-2 my-2'>
                         <label className='gen-label' for='message'>Message:</label>
-                        <input className='gen-input' name='message' type='text' placeholder='description input' onChange={handleChange} value={message}/>
+                        <input className='gen-input' id='message-input' name='message' type='text' placeholder='description input' onChange={handleChange} value={message}/>
                     </div>
                     <div className='col-12 py-2 my-2'>
-                        <button type='submit'>Submit message</button>
+                        <button className='submit-button' type='submit'>Submit</button>
                     </div>
                     <hr/>
                 </form>
