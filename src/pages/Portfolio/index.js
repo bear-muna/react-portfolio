@@ -5,12 +5,12 @@ export default function Portfolio() {
     return (
         <main>
             <h1>Portfolio Page</h1>
-            <PortfolioCard name='Testing' stack='MERN' link='https://youtube.com' />
-            <PortfolioCard name='Second Proj' stack='MERN' link='https://youtube.com' />
-            <PortfolioCard name='Third' stack='MERN' link='https://youtube.com' />
-            <PortfolioCard name='White noise' stack='MERN' link='https://youtube.com' />
-            <PortfolioCard name='Weather App' stack='MERN' link='https://youtube.com' />
-            <PortfolioCard name='Value' stack='MERN' link='https://youtube.com' />
+            <PortfolioCard name='Bite Buddies' stack='CSS/JS/node.js/express.js/mySQL/handlebars.js' link='https://github.com/bear-muna/bite-buddies' />
+            <PortfolioCard name='Enter The Temple' stack='HTML/CSS/JS' link='https://github.com/bear-muna/enter-the-temple' />
+            <PortfolioCard name='Tech Blog' stack='CSS/JS/node.js/express.js/mySQL/handlebars.js' link='https://github.com/bear-muna/tech-blog' />
+            <PortfolioCard name='Biology Quiz' stack='HTML/CSS/JS' link='https://github.com/bear-muna/biology-quiz' />
+            <PortfolioCard name='Weather App' stack='HTML/CSS/JS' link='https://github.com/bear-muna/weather-app' />
+            <PortfolioCard name='Social Network API' stack='node.js/express.js/mongoDB' link='https://github.com/bear-muna/social-network-api' />
         </main>
     )
 }

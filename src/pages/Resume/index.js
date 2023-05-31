@@ -8,7 +8,7 @@ export default function Resume() {
             <h1>Resume Page</h1>
             <h2>Proficiencies</h2>
             <ul>
-                {skills.map( x => <li>{x}</li>)}
+                {skills.map( (x,i) => <li key={i}>{x}</li>)}
             </ul>
         </main>
     )
