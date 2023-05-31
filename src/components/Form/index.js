@@ -56,15 +56,15 @@ export default function Form() {
                     <hr/>
                     <div className='col-12 py-2 my-2'>
                         <label className='gen-label' for='name'>Name:</label>
-                        <input className='gen-input' name='name' type='text' placeholder='name input' onChange={handleChange} value={name}/>
+                        <input className='gen-input' name='name' type='text' placeholder='name' onChange={handleChange} value={name}/>
                     </div>
                     <div className='col-12 py-2 my-2'>
                         <label className='gen-label' for='email'>Email:</label>
-                        <input className='gen-input' name='email' type='text' placeholder='email input' onChange={handleChange} value={email}/>
+                        <input className='gen-input' name='email' type='text' placeholder='email' onChange={handleChange} value={email}/>
                     </div>
                     <div className='col-12 py-2 my-2'>
                         <label className='gen-label' for='message'>Message:</label>
-                        <input className='gen-input' id='message-input' name='message' type='text' placeholder='description input' onChange={handleChange} value={message}/>
+                        <input className='gen-input' id='message-input' name='message' type='text' placeholder='message' onChange={handleChange} value={message}/>
                     </div>
                     <div className='col-12 py-2 my-2'>
                         <button className='submit-button' type='submit'>Submit</button>
