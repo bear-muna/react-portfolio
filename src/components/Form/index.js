@@ -1,8 +1,9 @@
 import React from 'react';
 import ContactCard from '../ContactCard'
 import { useState } from 'react';
+import './style.css';
 
-export default function Form(props) {
+export default function Form() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -22,6 +23,9 @@ export default function Form(props) {
 
             case 'message':
                 setMessage(value);
+                break;
+
+            default:
                 break;
         }
     };
@@ -46,19 +50,29 @@ export default function Form(props) {
     // TODO: Need to have email verification
 
     return (
-        <>
-            <form onSubmit={handleSubmit} >
-                <h2>Input contact information!</h2>
-                <hr/>
-                <label for='name'>Name:</label>
-                <input name='name' type='text' placeholder='name input' onChange={handleChange} value={name}/>
-                <label for='email'>Email:</label>
-                <input name='email' type='text' placeholder='email input' onChange={handleChange} value={email}/>
-                <label for='message'>Message:</label>
-                <input name='message' type='text' placeholder='description input' onChange={handleChange} value={message}/>
-                <button type='submit'>Submit</button>
-            </form>
+        <div className='row d-flex'>
+            <div className='form-sec col-4'>
+                <form className='form-submit' onSubmit={handleSubmit} >
+                    <hr/>
+                    <div className='col-12 py-2 my-2'>
+                        <label className='gen-label' for='name'>Name:</label>
+                        <input className='gen-input' name='name' type='text' placeholder='name input' onChange={handleChange} value={name}/>
+                    </div>
+                    <div className='col-12 py-2 my-2'>
+                        <label className='gen-label' for='email'>Email:</label>
+                        <input className='gen-input' name='email' type='text' placeholder='email input' onChange={handleChange} value={email}/>
+                    </div>
+                    <div className='col-12 py-2 my-2'>
+                        <label className='gen-label' for='message'>Message:</label>
+                        <input className='gen-input' name='message' type='text' placeholder='description input' onChange={handleChange} value={message}/>
+                    </div>
+                    <div className='col-12 py-2 my-2'>
+                        <button type='submit'>Submit message</button>
+                    </div>
+                    <hr/>
+                </form>
+            </div>
             <ContactCard testArr={contactInfo} />
-        </>
+        </div>
     )
 }
