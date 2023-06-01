@@ -7,6 +7,10 @@
     --contrast: rgb(158, 136, 12);
 }
 
+.about-container {
+    background: var(--main-back);
+}
+
 .about-me {
     font-size: 44px;
     font-weight: bold;

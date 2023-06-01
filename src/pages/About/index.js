@@ -3,7 +3,7 @@ import './style.css'
 
 export default function About() {
     return (
-        <div className='container-fluid p-3'>
+        <div className='container-fluid about-container p-3'>
             <div className='row'>
                 <div className='col-12 p-2 m-2 about-me'>About Me</div>
                 <div className='col-lg-4 col-12 profile-pic p-2 m-2'></div>
