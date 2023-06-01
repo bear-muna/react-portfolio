@@ -2,6 +2,7 @@ import React from 'react';
 import './style.css'
 
 export default function About() {
+    // About page render
     return (
         <div className='container-fluid about-container p-3'>
             <div className='row'>

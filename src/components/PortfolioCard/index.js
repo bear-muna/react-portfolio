@@ -2,6 +2,7 @@ import React from 'react';
 import './style.css';
 
 export default function PortfolioCard(props) {
+    // Card component using props
     return (
         <div className='px-2 card-link'>
             <a href={props.link} target='blank'>

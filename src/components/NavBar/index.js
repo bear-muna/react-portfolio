@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './style.css'
 
 export default function NavBar() {
+    // Navbar with links
     return (
         <div className='container-fluid nav-container  p-3'>
                 <div className='row d-flex justify-content-around'>

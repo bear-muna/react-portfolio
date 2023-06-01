@@ -5,6 +5,7 @@ export default function Resume() {
     const frontEndSkills = ['HTML', 'CSS', 'JavaScript', 'React']
     const backEndSkills = ['node.js', 'express.js', 'mySQL', 'sequelize', 'mongoDB', 'mongoose'];
     
+    // Render skills with resume link
     return (
         <div className='container-fluid p-3 resume-sec'>
             <div className='row'>

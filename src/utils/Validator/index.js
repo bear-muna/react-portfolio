@@ -1,3 +1,4 @@
+// Validators with regEx
 module.exports = {
     usernameCheck(x) {
         const username = /^[a-z ,.'-]+$/i;

@@ -10,6 +10,7 @@ import React from 'react';
 import './utils/style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+// Routes used in function
 function App() {
   return (
     <Router>

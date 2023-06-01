@@ -5,6 +5,7 @@ import './style.css';
 import val from '../../utils/Validator';
 
 export default function Form() {
+    // useState variables for form
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -13,6 +14,7 @@ export default function Form() {
     const [nameCheck, setNameCheck] = useState(false);
     const [emailCheck, setEmailCheck] = useState(false);
     
+    // Changes the state of variables
     const handleChange = (e) => {
         const { value, name } = e.target;
 
@@ -34,6 +36,7 @@ export default function Form() {
         }
     };
 
+    // Normal submission function
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -53,6 +56,7 @@ export default function Form() {
             message: message,
         };
 
+        // Changing the variables to defaults after submission
         setContactInfo( [...contactInfo, item] );
         setName('');
         setEmail('');
@@ -60,10 +64,6 @@ export default function Form() {
         setNameCheck(false);
         setEmailCheck(false);
     }
-
-
-    // TODO: Need to have name verification
-    // TODO: Need to have email verification
 
     return (
         <div className='row d-flex'>

@@ -3,6 +3,7 @@ import PortfolioCard from '../../components/PortfolioCard';
 import './style.css';
 
 export default function Portfolio() {
+    // Portfolio page render with Portfolio Card component
     return (
         <main className='portfolio-container container-fluid p-3'>
             <h1>Best Works</h1>
