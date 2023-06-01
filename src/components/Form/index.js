@@ -51,7 +51,7 @@ export default function Form() {
 
     return (
         <div className='row d-flex'>
-            <div className='form-sec col-4 mx-2'>
+            <div className='form-sec col-md-4 col-12 mx-2'>
                 <form className='form-submit' onSubmit={handleSubmit} >
                     <hr/>
                     <div className='col-12 py-2 my-2'>

@@ -7,38 +7,27 @@
     --contrast: rgb(158, 136, 12);
 }
 
-.nav-bar {
+.nav-container {
     background: var(--dark-back);
-    height: 30%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
-.nav-bar h1 {
+.nav-name {
     background: var(--main-back);
     color: var(--background);
     border-radius: 10px;
-    padding: 5px;
-    margin: 2px;
+    font-size: 24px;
     font-weight: bold;
-    font-size: 2em;
 }
 
 .nav-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
-}
-
-.nav-bar .nav-link {
     text-decoration: none;
-    color: var(--background);
-    font-size: 2em;
+    color: var(--main-back);
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.nav-bar .nav-link:hover {
-    color: var(--main-back);
+.nav-links:hover {
+    color: var(--background);
+    font-weight: bold;
 }
 
