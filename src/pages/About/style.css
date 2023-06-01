@@ -7,38 +7,18 @@
     --contrast: rgb(158, 136, 12);
 }
 
-.about-sec {
-    background: var(--main-back);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 1%;
-}
-
-.about-sec h1 {
+.about-me {
     font-size: 44px;
     font-weight: bold;
     color: var(--dark-back);
-    padding: 1%;
 }
 
-.about-sec .contents {
-    display: flex;
-}
-
-.about-sec img {
-    height: 20%;
-    width: 20%;
-    object-fit: contain;
-    object-position: center;
-    margin: 1%;
+.profile-pic {
+    background: url(../../assets/profile-picture.jpg);
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    border: 3px solid var(--background);
     border-radius: 10px;
-    border: 5px solid var(--background);
-}
-
-.about-sec p {
-    padding: 1%;
-    font-size: 20px;
 }
 
