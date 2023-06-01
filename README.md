@@ -14,3 +14,6 @@ Navigate through the tabs to see my works and if you would like to contact me, l
 
 ## Links
 
+Deployed Site : https://react-bear-portfolio.netlify.app/
+
+Github Repository : https://github.com/bear-muna/react-portfolio
