@@ -12,6 +12,9 @@ This project is deployed on Netlify. No installation required.
 
 Navigate through the tabs to see my works and if you would like to contact me, leave a message with a name and email.
 
+## Screenshot
+![Screenshot of portfolio](./src/assets/portfolio.png)
+
 ## Links
 
 Deployed Site : https://react-bear-portfolio.netlify.app/
