@@ -2,12 +2,16 @@ import React from 'react';
 import ContactCard from '../ContactCard'
 import { useState } from 'react';
 import './style.css';
+import val from '../../utils/Validator';
 
 export default function Form() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [contactInfo, setContactInfo] = useState([]);
+
+    const [nameCheck, setNameCheck] = useState(false);
+    const [emailCheck, setEmailCheck] = useState(false);
     
     const handleChange = (e) => {
         const { value, name } = e.target;
@@ -33,6 +37,16 @@ export default function Form() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
+        if (!val.usernameCheck(name)) {
+            setNameCheck(true);
+            return;
+        }
+
+        if (!val.emailCheck(email)) {
+            setEmailCheck(true);
+            return;
+        }
+
         let item = {
             name: name,
             email: email,
@@ -43,6 +57,8 @@ export default function Form() {
         setName('');
         setEmail('');
         setMessage('');
+        setNameCheck(false);
+        setEmailCheck(false);
     }
 
 
@@ -57,10 +73,12 @@ export default function Form() {
                     <div className='col-12 py-2 my-2'>
                         <label className='gen-label' for='name'>Name:</label>
                         <input className='gen-input' name='name' type='text' placeholder='name' onChange={handleChange} value={name}/>
+                        { nameCheck && <p>Input a valid name</p> }
                     </div>
                     <div className='col-12 py-2 my-2'>
                         <label className='gen-label' for='email'>Email:</label>
                         <input className='gen-input' name='email' type='text' placeholder='email' onChange={handleChange} value={email}/>
+                        { emailCheck && <p>Input a valid email</p> }
                     </div>
                     <div className='col-12 py-2 my-2'>
                         <label className='gen-label' for='message'>Message:</label>
