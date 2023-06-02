@@ -5,7 +5,8 @@ module.exports = {
         return x.match(username);
     },
     emailCheck(x) {
-        const email = /^[\w-.]+@([w-]+\.)+[\w-]{2,4}$/;
+        // eslint-disable-next-line
+        const email = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
         return x.match(email);
     }
 }
