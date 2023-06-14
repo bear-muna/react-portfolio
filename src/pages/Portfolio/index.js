@@ -9,22 +9,22 @@ export default function Portfolio() {
             <h1>Best Works</h1>
             <div className='row d-flex justify-content-around'>
                 <div className='col-lg-5 col-md-12 proj p-3 m-3' id='proj-1'>
-                    <PortfolioCard name='Bite Buddies' stack='CSS/JS/node.js/express.js/mySQL/handlebars.js' link='https://github.com/bear-muna/bite-buddies' />
+                    <PortfolioCard name='Project Portal' stack='mySQL/express.js/React/node.js' link='https://proj-portal.netlify.app/' />
                 </div>
                 <div className='col-lg-5 col-md-12 proj p-3 m-3' id='proj-2'>
-                    <PortfolioCard name='Enter The Temple' stack='HTML/CSS/JS' link='https://github.com/bear-muna/enter-the-temple' />
+                    <PortfolioCard name='Bite Buddies' stack='CSS/JS/node.js/express.js/mySQL/handlebars.js' link='https://github.com/bear-muna/bite-buddies' />
                 </div>
                 <div className='col-lg-5 col-md-12 proj p-3 m-3' id='proj-3'>
-                    <PortfolioCard name='Tech Blog' stack='CSS/JS/node.js/express.js/mySQL/handlebars.js' link='https://github.com/bear-muna/tech-blog' />
+                    <PortfolioCard name='Enter The Temple' stack='HTML/CSS/JS' link='https://github.com/bear-muna/enter-the-temple' />
                 </div>
                 <div className='col-lg-5 col-md-12 proj p-3 m-3' id='proj-4'>
-                    <PortfolioCard name='Biology Quiz' stack='HTML/CSS/JS' link='https://github.com/bear-muna/biology-quiz' />
+                    <PortfolioCard name='Tech Blog' stack='CSS/JS/node.js/express.js/mySQL/handlebars.js' link='https://github.com/bear-muna/tech-blog' />
                 </div>
                 <div className='col-lg-5 col-md-12 proj p-3 m-3' id='proj-5'>
-                    <PortfolioCard name='Weather App' stack='HTML/CSS/JS' link='https://github.com/bear-muna/weather-app' />
+                    <PortfolioCard name='Biology Quiz' stack='HTML/CSS/JS' link='https://github.com/bear-muna/biology-quiz' />
                 </div>
                 <div className='col-lg-5 col-md-12 proj p-3 m-3' id='proj-6'>
-                    <PortfolioCard name='Social Network API' stack='node.js/express.js/mongoDB' link='https://github.com/bear-muna/social-network-api' />
+                    <PortfolioCard name='Weather App' stack='HTML/CSS/JS' link='https://github.com/bear-muna/weather-app' />
                 </div>
             </div>
         </main>
