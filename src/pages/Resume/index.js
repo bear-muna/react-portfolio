@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import resumeFile from '../../assets/RESUME.pdf';
 
 export default function Resume() {
     const frontEndSkills = ['HTML', 'CSS', 'JavaScript', 'React']
@@ -24,7 +25,15 @@ export default function Resume() {
                     )}
                 </div>
                 <div className='col-12'>
-                        <a className='res-tag' href='https://placekitten.com/200/300' target='_blank' rel="noreferrer" >Resume ... Coming soon!</a>
+                        <a
+                            className='res-tag'
+                            href={resumeFile}
+                            target='_blank'
+                            download='Resume'
+                            rel='noreferrer'
+                            >
+                            Resume
+                        </a>
                 </div>   
             </div>
         </div>
