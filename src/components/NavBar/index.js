@@ -5,7 +5,7 @@ import './style.css'
 export default function NavBar() {
     // Navbar with links
     return (
-        <div className='container-fluid nav-container  p-3'>
+        <div className='container-fluid nav-container sticky-top p-3'>
                 <div className='row d-flex justify-content-around'>
                     <div className='col-md-2 col-12 p-2 text-center nav-name'>EJ Muna</div>
                     <div className='col-md-8 col-12 d-flex justify-content-around align-items-center flex-wrap p-2'>
