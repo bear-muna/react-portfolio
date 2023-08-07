@@ -6,6 +6,7 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import Footer from './components/Footer';
+// import Main from './pages/Main';
 import React from 'react';
 import './utils/style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
