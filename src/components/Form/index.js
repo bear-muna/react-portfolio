@@ -1,11 +1,15 @@
 import React from 'react';
+import { useRef } from 'react';
 import ContactCard from '../ContactCard'
 import { useState } from 'react';
 import './style.css';
 import val from '../../utils/Validator';
+import emailjs from '@emailjs/browser';
 
 export default function Form() {
     // useState variables for form
+    const form = useRef();
+
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -56,6 +60,17 @@ export default function Form() {
             message: message,
         };
 
+        emailjs.sendForm(
+            'service_il600cf',
+            'template_ozb4v9o',
+            form.current,
+            'K7vQrmnlBE8HmC-TK'
+        ).then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        })
+
         // Changing the variables to defaults after submission
         setContactInfo( [...contactInfo, item] );
         setName('');
@@ -68,7 +83,7 @@ export default function Form() {
     return (
         <div className='row d-flex'>
             <div className='form-sec col-md-4 col-12 mx-2'>
-                <form className='form-submit' onSubmit={handleSubmit} >
+                <form className='form-submit' ref={form} onSubmit={handleSubmit} >
                     <hr/>
                     <div className='col-12 py-2 my-2'>
                         <label className='gen-label' for='name'>Name:</label>
