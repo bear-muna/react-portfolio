@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import resumeFile from '../../assets/RESUME.pdf';
+import resumeFile from '../../assets/resume-muna.pdf';
 
 export default function Resume() {
     const frontEndSkills = ['HTML', 'CSS', 'JavaScript', 'React']
