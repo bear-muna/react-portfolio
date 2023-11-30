@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import resumeFile from '../../assets/resume-muna.pdf';
+import resumeFile from '../../assets/Resume.pdf';
 
 export default function Resume() {
     const frontEndSkills = ['HTML', 'CSS', 'JavaScript', 'React']
@@ -29,7 +29,7 @@ export default function Resume() {
                             className='res-tag'
                             href={resumeFile}
                             target='_blank'
-                            download='Resume'
+                            download='Resume-Muna'
                             rel='noreferrer'
                             >
                             Resume
